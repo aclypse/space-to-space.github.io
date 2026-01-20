@@ -225,9 +225,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #newsletter {
-    background-color: var(--white);
-    padding-bottom: 2rem;
-    top: 0px;
+    background-image: url(images/form-bg.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size:cover;
+    padding-bottom: 6rem;
+    padding-top: 3rem;
 }
 
 #newsletter h3 {
@@ -351,3 +354,4 @@ footer {
   font-style: normal;
 
 } */
+
