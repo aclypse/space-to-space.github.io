@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --primary-color: #5D79D9;
+    --secondary-color: #ff9800;
+    --font-family: 'Nunito', sans-serif;
+    --bg-color-yellow: #FFF3E1;
+    --blue: #9FB5CB;
+    --light-blue: #BECEDC;
+    --white: #FFF3E1;
+    --light-salmon: #FCD2C4;
+    --salmon: #F4A499;
+    --orange: #FCC190;
+    --light-green: #CDC99C;
+    --green: #B0B17E;
+    --font-size: 18px;
+    user-select: ;
+    
+}
+::selection {
+    background: var(--salmon);
+    color: var(--blue);
+}
+
+html, body {
+    height: 100%;
+    font-family: var(--font-family);
+    color: var(--primary-color);
+}
+
+nav {
+    background-color: var(--white);
+    padding: 2rem 1rem;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    padding: 0 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    transition: text-decoration 0.3s ease;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+    list-style: none;
+    align-items:center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#home {
+    background-image: url('/images/bg-aliens.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+}
+
+#about {
+    background-color: var(--green);
+    color:#50455B;
+}
+
+#about h2 {
+    color: #50455B;
+}
+
+#services {
+    background-color: var(--light-salmon);
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    align-items:center;
+    margin: 0 auto;
+    flex-direction: row;
+}
+
+.card-item {
+    background-color: var(--white);
+    width: 30%;
+    height: 450px;
+    padding: 2rem;
+    padding-bottom: 4rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0 1rem;
+    font-weight: bold;
+    align-items:center;
+    margin: 0 auto 2rem auto; 
+    flex-direction: column;
+    border-radius: 10px;
+    border: 2px solid var(--light-blue);
+}
+
+.card-item h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+
+    text-align: center;
+}
+
+.card-item p {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.card-item:hover    {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.card-item:not(:hover) {
+    transform: scale(1.0);
+    transition: transform 0.3s ease;
+}
+
+.card-icon {
+    width: 100px;
+    height: auto;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+#contact {
+    background-color: var(--light-blue);
+    padding: 4rem 10rem;
+   
+}
+
+#contact div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 1rem;
+    align-items: baseline;
+    padding: 0 15rem;
+}
+
+container {
+    padding-bottom: 5rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.adress-info {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: left;
+    /* text-align: left; */
+}
+
+.adress-info h3, .social-media h3 {
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 0;
+    margin-left: -5px;
+    margin-bottom: 3rem;
+}
+
+.adress-info p, .social-media li {
+    padding: 0;
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.social-media-link {
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    line-height: 1.5;
+    margin: 10px 0
+}
+
+.social-media-link a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.social-media-link:hover {
+    text-decoration: underline;
+    scale: 1.2;
+    transition: text-decoration 0.3s ease, scale 0.3s ease;
+}
+
+.social-media-link:not(:hover) {
+    text-decoration: none;
+    scale: 1.0;
+    transition: text-decoration 0.3s ease, scale 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nunito', sans-serif;
+    color: var(--primary-color);
+    text-align: center;
+    position: relative;
+    top: 0.5rem;
+}
+
+#newsletter {
+    background-color: var(--white);
+    padding-bottom: 2rem;
+    top: 0px;
+}
+
+#newsletter h3 {
+    margin: 4rem;
+}
+
+
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+section {
+    padding: 4rem 10rem 5rem 10rem;
+    margin: 0;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 0 auto;
+}
+
+div p {
+    
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding-left: 6rem;
+    margin-bottom: 2rem;
+    padding-right: 6rem;
+    text-align: left;
+    min-width: 40ch;
+    max-width: 145ch;
+    
+}
+
+quote {
+    font-style: italic;
+    margin-top: 1rem;
+    display: block;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.logo:not(:hover) {
+    transform: scale(1.0);
+    transition: transform 0.1s ease;
+}
+
+.social-media-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+input[type=email] {
+  width: 70%;
+  padding: 12px;
+  margin: 16px auto;
+  display: block;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 50px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: larger;
+  font-family: var(--font-family);
+}
+button[type=submit] {
+    display: block;
+    width: fit-content;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 24px 36px;
+    margin: 16px auto;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: larger;
+    font-family: var(--font-family);
+}
+
+button[type=submit]:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button[type=submit]:not(:hover) {
+  background-color: var(--primary-color);
+  color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+/* @keyframes scaleUp */
+
+/* .nunito-<uniquifier> {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
