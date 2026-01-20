@@ -67,7 +67,7 @@ nav ul {
 }
 
 #home {
-    background-image: url('/images/bg-aliens.png');
+    background-image: url('images/bg-aliens.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -349,4 +349,5 @@ footer {
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
+
 } */
